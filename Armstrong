@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Armstrong {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int n,aab,sum=0,rem;
+		System.out.println("Enter a number:");
+		Scanner sc= new Scanner(System.in);
+		n=sc.nextInt();
+		aab=n;
+		while(n!=0)
+		{
+			rem=n%10;
+			sum=(rem*rem*rem)+sum;
+			n=n/10;
+		}
+		if(aab==sum) {
+			System.out.println("Armstrong number");
+			
+		}
+		else {
+			System.out.println("not a armstrong number");
+		}
+
+	}
+
+}
